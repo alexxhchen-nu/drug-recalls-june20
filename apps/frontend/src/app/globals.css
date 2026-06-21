@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f7ecd1;
+  --paper-light: #fff8e7;
+  --ink: #171717;
+  --blue: #1f5aa6;
+  --red: #d83a31;
+  --yellow: #f3c84b;
+  --green: #3f7d58;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(23, 23, 23, 0.12) 1px, transparent 0),
+    linear-gradient(180deg, #f8efd8 0%, #f2dfb8 100%);
+  background-size: 18px 18px, auto;
+  color: var(--ink);
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.comic-shadow {
+  box-shadow: 8px 8px 0 #171717;
+}
+
+.comic-shadow-sm {
+  box-shadow: 4px 4px 0 #171717;
+}
+
+.halftone {
+  background-image: radial-gradient(rgba(23, 23, 23, 0.18) 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+}
+
+.paper-texture {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.55), transparent 28%),
+    radial-gradient(circle at 80% 30%, rgba(243,200,75,0.18), transparent 22%),
+    linear-gradient(135deg, #fff8e7, #f7ecd1);
+}
+
+.hand {
+  font-family: var(--font-patrick), cursive;
+}

@@ -1,0 +1,13 @@
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+.DS_Store
+node_modules/
+dist/
+build/
+.next/
+.vercel/
